@@ -1,0 +1,102 @@
+#main-content{
+    .le-top{
+        width: 230px;
+        height: 250px;
+        background: #b2ce45;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        ul{
+            padding-top: 10px;
+            li{
+                list-style-type: none;
+                margin-left: -20px;
+                padding-top: 10px;
+                a{
+                    font-size: 17.5px;
+                    color: #f5f6f6;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+    .le-img{
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+    .le-ct{
+        background: #ffffff;
+        text-align: center;
+        padding: 15px 20px 15px 20px;
+        margin-left: -200px;
+        margin-right: 200px;
+        margin-bottom: 50px;
+        .h1{
+            padding: 20px;
+            p{
+                font-size: 15px;
+                color: $color-tm-tm-tm;
+            }
+            a{
+                font-size: 15px;
+                color: red;
+            }
+            img{
+                width: 70%;
+                height: 50%;
+            }
+            i{
+                font-size: 15px;
+                color: red;
+            }
+        }
+        .h2{
+            p{
+                font-size: 15px;
+                color: $color-tm-tm-tm;
+            }
+            a{
+                font-size: 15px;
+                color: red;
+            }
+            img{
+                width: 70%;
+                height: 50%;
+            }
+            i{
+                font-size: 15px;
+                color: red;
+            }
+        }
+        h6{
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .le-img{
+        img{
+            margin-top: 70px;
+            width: 0%;
+        }
+    }
+    .le-ct{
+        margin-left: 50px;
+        margin-top: -330px;
+        transform: translate(27%);
+    }
+    .le-top{
+        visibility: hidden;
+    }
+}
+@media (max-width: 576px){
+    .le-ct{
+        margin-top: -330px;
+        transform: translate(54%);
+        margin: 0 auto;
+    }
+    .le-content{
+        margin-top: -370px;
+    }
+}

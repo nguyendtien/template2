@@ -1,0 +1,205 @@
+{% from 'macros/form.html' import formBlock, formHorizontal, select, selectHorizontal, textarea, textareaHorizontal %} {%
+from 'macros/helpers.html' import image %} {% extends 'layouts/application.html' %}{% block bodyClass %}class="internal"{%
+endblock %} {% block content %}
+<main id="main-content">
+  <!-- <form id="contactForm" name="contactForm" method="POST" action="/api/contact">
+    {{ formBlock('Name', 'number', 'Name', id='name', message='Vui lòng nhập thông tin') }} 
+    {{ formBlock('Email', 'text', 'Email',
+    id='email', message='Vui lòng nhập thông tin') }}
+    {{ select('Tỉnh / Thành', 'Email', id='address', message='Vui lòng
+    nhập thông tin') }} 
+    {{ textarea('Message', 'text', id='message', message='Vui lòng nhập thông tin') }}
+
+    <button type="button" class="btn btn-success">Submit</button>
+  </form> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 offset-1 col-sm-12">
+        <div class="top-left">
+          <h5><b>Subheadline Here</b></h5><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet dolor non sem gravida commodo. In massa quam, interdum non neque ac, scelerisque tempor urna. Etiam fermentum diam sed viverra tristique. Sed non mattis nisi. Curabitur malesuada facilisis nulla ut volutpat. Duis bibendum sodales est, vel aliquam augue volutpat eu. Cras vestibulum rutrum orci.</p>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-md-1">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="col-md-10">
+                    <span><b>99.99% Uptime</b></span><br>
+                    <p>on our own BGP Network of <br>
+                      tier 1 backbone providers</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="col-md-10">
+                    <span><b>Compliant</b></span><br>
+                    <p>SOC2, Type2, HIPPA and <br>
+                      PCI-DSS compliant</p>
+                </div>
+              </div>
+              <div class="btn-group btn-group-toggle">
+                <a href=""><button id="bt2">Download Spec Sheet</button></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-md-1">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="col-md-10">
+                    <span><b>25,000 SQFT of Space</b></span><br>
+                    <p>downtown montreal locations</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="col-md-10">
+                    <span><b>Green Grid Hydro Power</b></span><br>
+                    <p>Operated on Hydro Quebec power <br>
+                      with total capacity of 5.5 MW</p>                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-8 offset4 col-sm-12">
+        <div class="top-right">
+          <h5>
+            <b>Schedule a site tour or request
+              more info about our MTL 1 location</b>
+            </h5>
+            <form action="">
+              <label for="">Name</label><br>
+              <input type="text" name="" id=""><br>
+              <label for="">Company</label><br>
+              <input type="text" name="" id=""><br>
+              <label for="">Email</label><br>
+              <input type="text" name="" id=""><br>
+              <label for="">Phone</label><br>
+              <input type="text" name="" id=""><br>
+              <label for="">Message</label><br>
+              <textarea name="" id="" cols="30" rows="2"></textarea><br><br>
+              <div class="btn-group btn-group-toggle">
+                <a href=""><button id="bt2">Send Message</button></a>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-11">
+        <div class="center">
+          <div class="row" id="rau">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="ct1">
+                <h5><b>Basic Power
+                    Infrastructure</b></h5>
+                <p>
+                    Power density up to 30kW per cabinet <br><br>
+                    120v/208v/208v 3-phase power available <br><br>
+                    Standard N+1 UPS solution <br><br>
+                    2N (A+B) power upon request <br><br>
+                    Multipe generators <br><br>
+                    On-site diesel storage providing 24 hours unrefueled operations
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ct1">
+                  <h5><b>Cooling Modules
+                      & Fire Protection</b></h5>
+                      <p>
+                          Chilled water in use throught the facility <br><br>
+                          Hot aisle/cold aisle containment <br><br>
+                          Customized containment pods <br><br>
+                          Zone monitoring to ensure environmental conditions <br><br>
+                          Emergency refusing contracts in place <br><br>
+                          Pre-action fire and smoke suppression <br><br>
+                          VESDA (Very Early Smoke Detection Alarms)
+                      </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ct1">
+                  <h5><b>Security</b></h5>
+                  <p>
+                      Security staff on-site 24x7x365 <br><br>
+                      Dual layered physical access control including card access <br> <br>
+                      Physical man-trap controls all entries and exits <br><br>
+                      Monitoring with HD security cameras <br><br>
+                      Audited yearly for SOC2 Type2 compliance <br><br>
+                      Custom security controls available upon request
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-11">
+        <div class="bottom">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="slideimage">
+                  <div class="anh">
+                      <img src="images/b.jpg" alt="" class="image">
+                      <img src="images/c.jpg" alt="" class="image">
+                  </div>
+                  <script>
+                    var	gta=0;
+                    chayanh();
+                    function chayanh(){
+                      var x=document.getElementsByClassName('image');
+                      for(var i=0;i<x.length;i++)
+                      {
+                        x[i].style.display='none';
+                      }
+                      gta++;
+                      if(gta>x.length){
+                        gta=1;
+                      }
+                      x[gta-1].style.display='block';
+                      setTimeout(chayanh,2000);
+                    }
+                  </script>
+                </div>
+            </div>
+            <div class="col-md-8">
+              <div class="br">
+                <h5><b>Fiber Carriers and Connectivity</b></h5>
+                <h6>
+                    eStruxture provides ISP services to manage server and colocation customers, as <br> well as carrier and network neutral access to many local and international <br> carriers. <br><br>
+                    - Dual physical fiber entrances into the building (North and South) with direct <br> conduits to the facility’s Meet-Me-Room <br><br>            
+                    - QIX connectivity <br><br>
+                    - AWS Direct Connect connections availble <br><br>
+                    Current telecom suppliers available within the building include: <br><br>           
+                    Rogers, Cogent, Bell, Videotron, Allstream, Zayo, FibreNoire, MetroOptic, Cogeco, <br> BlueFiber, TELUS, Videotron <br><br>
+                    Providers available via dark fibre extensions: <br><br>
+                    Level3, Tiscali, TATA, Cogent, Hybernia Atlantic, nLayer, GT-T, HE 
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</main>
+{% block green %}
+        {% include "modules/green.html" %}
+        {% endblock %}
+{% endblock %}

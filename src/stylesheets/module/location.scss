@@ -1,0 +1,113 @@
+#main-content{
+    background: $bg-color;
+    .top-left{
+        h5{
+            font-size: 24px;
+        }
+        p{
+            font-size: 15px;
+            color: $color-tm-tm-tm;
+        }
+        button{
+            border: 2px solid red;
+            color: red;
+            background: $bg-color;
+        }
+        i{
+            color: #b2ce45;
+        }
+    }
+    .top-right{
+        z-index: 5;
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        background: #b2ce45;
+        margin-top: -150px;
+        margin-bottom: 150px;
+        h5{
+            font-size: 16px;
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+        label{
+            font-size: 15px;
+            color: #fefdfd;
+            margin-left: 60px;
+        }
+        input{
+            width: 222px;
+            text-align: center;
+            margin-left: 60px;
+        }
+        textarea{
+            margin-left: 60px;
+        }
+        button{
+            border: 2px solid #d35050;
+            color: #ffffff;
+            background: #d35050;
+            margin-left: 60px;
+        }
+    }
+    .center{
+        background: #ffffff;
+        margin-top: 50px;
+        .ct1{
+            padding: 40px 40px 40px 40px;
+            h5{
+                font-size: 15.5px;
+                color: #2c2c34;
+            }
+            p{
+                font-size: 15px;
+                color: $color-tm-tm-tm;
+            }
+        }
+    }
+    .bottom{
+        margin-top: 50px;
+        margin-bottom: 200px;
+        h5{
+            font-size: 24px;
+        }
+        h6{
+            font-size: 15px;
+            color: $color-tm-tm-tm;
+        }
+        .anh{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 768px){
+    .top-left{
+        margin-bottom: -1070px;
+        margin-top: 500px;
+        transform: translate(-10%);
+    }
+    .center{
+        margin-top: 200px;
+    }
+    .top-right{
+        transform:translate(25%);
+    }.br{
+        margin-bottom: 350px;
+    }
+    .slideimage{
+        margin-bottom: 30px;
+    }
+    .center{
+        #rau{
+            margin-top: 1095px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .top-right{
+        transform:translate(25%);
+    }.br{
+        margin-bottom: 350px;
+    }
+}
