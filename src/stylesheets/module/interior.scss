@@ -220,3 +220,22 @@
         }
     } 
 }
+@media (min-width:768px){
+    .left-c{
+        transform: translate(-20%,30%);
+    }
+    .right-c{
+        transform: translate(-15%,-30%);
+    }
+    .text{
+        transform: translate(0%,-20%);
+    }
+}
+@media (min-width:1024px){
+    .left-c{
+        transform: translate(-20%,-15%);
+    }
+    .right-c{
+        transform: translate(-15%,-30%);
+    }
+}

@@ -1,10 +1,21 @@
 --- title: Our People body: --- {% extends 'layouts/application.html' %}{% block bodyClass %}class="home-page"{% endblock
 %}{% block content %}
 <main id="main-content">
-  {{ title }}
-  <div>
-    {{ body }}
-  </div>
+  <!--/////////////////////////////////////-->
+
+    <div class="container">
+        <div class="row">
+            {% for n in test %}
+          <div class="col-md-4">
+            <h2>{{ n.name }}</h2>
+            <p>{{ n.age }}</p>
+            <a href="">{{ n.job }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+   <!--/////////////////////////////////////-->
 </main>
 <div>
   {% include "modules/counter.html" %}

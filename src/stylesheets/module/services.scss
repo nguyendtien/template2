@@ -27,6 +27,10 @@
         }
         a{
             color: red;
+            i{
+                color: red;
+                font-size: 14px;
+            }
         }
     }
     @media (max-width: 768px){
