@@ -113,17 +113,17 @@
 }
 @media (min-width: 360px){
     .top-right{
-        transform: translate(23%);
+        transform: translate(-3%,-7%);
     }
 }
 @media (min-width: 375px){
     .top-right{
-        transform: translate(25%);
+        transform: translate(-1%);
     }
 }
 @media (min-width: 412px){
     .top-right{
-        transform: translate(30%);
+        transform: translate(5%);
     }
 }
 @media (min-width: 768px){
@@ -139,12 +139,15 @@
 }
 @media (min-width: 1024px){
     .top-right{
-        transform: translate(-20%,20%);
+        transform: translate(-20%,10%);
     }
     .center{
         transform: translate(5%,10%);
     }
     .top-left{
         transform: translate(-10%);
+    }
+    .bottom{
+        transform: translate(0%,20%);
     }
 }

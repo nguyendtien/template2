@@ -353,63 +353,93 @@
 // }
 @media (max-width:1024px){
     .ind{
-        margin-left: -70px;
+        margin-left: 80px;
+    }
+    .in-right{
+        margin-left: 70px;
     }
 }
 @media (max-width: 768px){
-    .in-top{
-        margin-left: -10px;
-    }
-    .in-map{
-        .map{
-
-        }
-        .bg{
-            margin-top: 50px;
+    .accordion{
+        transform: translate(40%);
+        .panel{
+            transform: translate(40%);
         }
     }
     .in-right{
         margin-left: 100px;
     }
     .ind{
-        margin: 33px;
+        margin-top: 15px;
         .in-bt1{
-            // margin-left: -20px;
-        }
-    }
-    .inbt{
-        .img{
-            transform: translate(25%);
-        }
-    }
-    .bottom-f{
-        margin-left: 20px;
-    }
-}
-@media (max-width: 576px){
-    .top-right{
-        margin-left: -90px;
-    }
-    .ind{
-        transform: translate(10%);
-        .in-bt1{
-            border: 1px solid #abb5c4;
+            transform: translate(-60%);
         }
         .in-bt2{
-            border: 1px solid #abb5c4; 
+            transform: translate(-30%);
         }
+
         .in-bt3{
-            border: 1px solid #abb5c4; 
+            transform: translate(-60%);
         }
         .in-bt4{
-            border: 1px solid #abb5c4;
+            transform: translate(-30%);
+        }
+    }
+}
+@media (max-width: 414px){
+    .in-map{
+        .bg{
+            margin-top: 48px;
+        }
+    }
+    .accordion{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: -200px;
+        .panel{
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: -360px;
         }
     }
     .in-right{
         text-align: center;
-        margin-left: 20px;
+        margin-left: -10px;
     }
-    .in-co{
-        margin-top: -50px;
+    .ind{
+        margin-bottom: 30px;
+        .in-bt1{
+            transform: translate(0%);
+            border: 1px solid #abb5c4;
+        }
+        .in-bt2{
+            transform: translate(0%);
+            border: 1px solid #abb5c4;
+        }
+        .in-bt3{
+            transform: translate(0%);
+            border: 1px solid #abb5c4;
+        }
+        .in-bt4{
+            transform: translate(0%);
+            border: 1px solid #abb5c4;
+        }
+    }
+}
+@media (max-width:375px){
+    .ind{
+        .in-bt1{
+            transform: translate(-10%);
+        }
+        .in-bt2{
+            transform: translate(-10%);
+        }
+        .in-bt3{
+            transform: translate(-10%);
+        }
+        .in-bt4{
+            transform: translate(-10%);
+        }
+
     }
 }

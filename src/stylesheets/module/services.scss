@@ -35,7 +35,7 @@
     }
     @media (max-width: 768px){
         .se-content{
-            margin-bottom: 70px;
+            margin-bottom: 100px;
             .se-3{
                 margin-top: 50px;
             }
@@ -43,7 +43,12 @@
     }
     @media (max-width: 576px){
         .se-content{
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
     }
+    @media (max-width: 1024px){
+        .se-content{
+            margin-bottom: 100px;
+        }
+    } 
 }
